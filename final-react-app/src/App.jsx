@@ -1,6 +1,7 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Error404 from "./components/helpers/Error404"
 import './App.css'
+import Header from './components/pages/Header'
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,8 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Header />
       <RouterProvider router={router} />
     </div>
   )
