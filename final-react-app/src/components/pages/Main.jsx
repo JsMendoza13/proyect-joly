@@ -6,6 +6,7 @@ const Main = () => {
       Main
       <p>hola</p>
       <p>prueba2</p>
+      <p>prueba3</p>
     </div>
   )
 }
