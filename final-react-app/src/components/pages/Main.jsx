@@ -5,6 +5,7 @@ const Main = () => {
     <div>
       Main
       <p>hola</p>
+      <p>prueba2</p>
     </div>
   )
 }
