@@ -2,9 +2,9 @@ import React from 'react'
 
 const Main = () => {
   return (
-    <div className='bg-red-400'>
+    <div>
       Main
-      <p>hola</p>
+      <p className='bg-red-400'>hol ....</p>
       <p>prueba2</p>
     </div>
   )
