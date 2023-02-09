@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <div>
       Main
-      <p className='bg-red-400'>hol ....</p>
+      <p>hol ....</p>
       <p>prueba2</p>
     </div>
   )
