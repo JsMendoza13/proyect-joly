@@ -18,7 +18,7 @@ background: linear-gradient(to left, #237A57, #093028); /* W3C, IE 10+/ Edge, Fi
 
 
 .BtnImg {
-  width: 9em;
+  width: 14em;
   height: 3em;
   border-radius: 30em;
   font-size: 15px;
@@ -46,7 +46,7 @@ background: linear-gradient(to left, #237A57, #093028); /* W3C, IE 10+/ Edge, Fi
  }
  
  .BtnImg:hover::before {
-  width: 9em;
+  width: 14em;
  }
 
  @media (max-width: 1279px) {
