@@ -8,19 +8,16 @@ const Main = () => {
 
 
         {/*  Parte Imagen y boton */}
-
-       
-        
-       
+          
         <section className='md:col-span-5'>
           <div className='flex justify-center'>  </div>
        
             <img className='md:mt-20 w-auto h-96 ' src="../src/assets/img1.png" />
-  
+                {/*  boton contactame */}
          <div className='md:ml-[70%]'>
           <button className='BtnImg text-quaternary '>Contáctanos</button>
          </div>
-        
+              {/*  Cuadro abajo de imagenes */}
          <div className='relative bg-emerald-900 shadow-2xl rounded-tr-3xl rounded-br-lg xl:p-4 p-2 w-[80%] flex flex-col justify-center max-w-[80%] ml-[30%] -translate-x-[60%] xl:-mt-[6%] h-[30%] '></div>
 
         </section>
