@@ -2,6 +2,7 @@ import React from 'react'
 
 const Main = () => {
   return (
+      <section>
     <section className='container h-[90vh] grid grid-cols-1 md:grid-cols-8 '>
 
        {/*  Informacion del Main, y divisiones */}
@@ -24,9 +25,7 @@ const Main = () => {
            
 
         </section>
-
          
-
            {/*  Parte de titulo y Descripcion */}
         <section className='md:col-span-3 flex items-center justify-center p-8  '>
            <div>
@@ -34,6 +33,32 @@ const Main = () => {
             <p className='text-gray-300'>Mejore cualquier comida o refrigerio con este delicioso guacamole que complace a todos, perfectamente obtenido y preparado para obtener el máximo sabor. </p>
             </div>
         </section>
+        </section>
+       {/*  PARTE DE LA MISION - VISION */}
+        <section className=' h-[100vh] grid grid-cols-1 md:grid-cols-8 '>
+       
+          <section className='md:col-span-4 flex items-center justify-center p-8'>
+          <div>
+            <h1 className='font-bold text-quaternary m-1 ml-5 text-6xl text-secundary' >Mision</h1>
+            <img className='md:mt-10 mt-[10%] md:w-[50%] w-[100%] md:h-86 h-80 ' src="../src/assets/mision.png" />
+
+          <p className='relative bg-emerald-900 shadow-2xl rounded-tr-3xl rounded-br-lg xl:p-14 p-10 w-full md:w-[50%] flex flex-col md:ml-[30%] ml-[50%] -translate-x-[-40%] xl:-mt-[1%] -mt-[2%]  h-[100%] '>Guacamole y Hummus es un proyecto innovador que ofrece deliciosos platillos con la misión de llevar el sabor de nuestra region a cualquier cocina. 
+          Ademas es una empresa que se esfuerza por crear un impacto significativo en el mundo. Como esfuerzo empresarial, valoramos la creación de un ambiente de trabajo colaborativo y empoderado. Nuestro objetivo es empoderar a las personas a través de nuestros productos y brindarles la oportunidad de aprender nuevas habilidades mientras se divierten.</p></div>
+          </section>
+       
+        <section className='md:col-span-4 flex items-center justify-center p-8'>
+          <div>
+            <h1>vision</h1>
+            <img className='md:mt-20 mt-[20%] md:w-[50%] w-[100%] md:h-86 h-80  -rotate-3  ' src="../src/assets/vision.png" />
+
+            <p>Creemos en una visión empresarial que está guiada por la pasión de crear productos sorprendentes mientras promovemos la calidad y la nutrición saludable.
+            A través de nuestra innovación, hacemos que la alimentación saludable sea más fácil, más asequible, más accesible y, lo que es más importante, ¡deliciosa!
+            </p>
+            </div>
+          </section>
+          
+        </section>
+    
     </section>
         
   )
