@@ -53,4 +53,13 @@ background: linear-gradient(to left, #237A57, #093028); /* W3C, IE 10+/ Edge, Fi
   #nav {
     background-color: #0D3A2F;
   }
+
+  .BtnImg {
+    width: 100%;
+  }
+
+  .BtnImg:hover::before {
+    width: 100%;
+  }
+
   }
