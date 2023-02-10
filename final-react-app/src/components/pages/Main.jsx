@@ -2,23 +2,26 @@ import React from 'react'
 
 const Main = () => {
   return (
-    <section className=' h-[90vh] grid grid-cols-1 md:grid-cols-8 '>
+    <section className='container h-[90vh] grid grid-cols-1 md:grid-cols-8 '>
 
        {/*  Informacion del Main, y divisiones */}
-
-
-        {/*  Parte Imagen y boton */}
           
         <section className='md:col-span-5'>
           <div className='flex justify-center'>  </div>
-       
-            <img className='md:mt-20 w-auto h-96 ' src="../src/assets/img1.png" />
+            {/* Imagen Main */}
+        <div>   
+
+            <img className='md:mt-20 mt-[20%] md:w-[50%] w-[100%] md:h-86 h-80  -rotate-3  ' src="../src/assets/img1.png" />
+
+   {/*  Cuadro abajo de imagenes */}
+            <div className='relative bg-emerald-900 shadow-2xl rounded-tr-3xl rounded-br-lg xl:p-14 p-10 w-full md:w-[50%] flex flex-col justify-center  md:ml-[30%] ml-[50%] -translate-x-[60%] xl:-mt-[2%] -mt-[2%]  h-[100%] '></div>
+
+            </div>
                 {/*  boton contactame */}
-         <div className='md:ml-[70%]'>
+         <div className='md:ml-[70%] m-5 '>
           <button className='BtnImg text-quaternary '>Contáctanos</button>
          </div>
-              {/*  Cuadro abajo de imagenes */}
-         <div className='relative bg-emerald-900 shadow-2xl rounded-tr-3xl rounded-br-lg xl:p-4 p-2 w-[80%] flex flex-col justify-center max-w-[80%] ml-[30%] -translate-x-[60%] xl:-mt-[6%] h-[30%] '></div>
+           
 
         </section>
 
@@ -32,6 +35,7 @@ const Main = () => {
             </div>
         </section>
     </section>
+        
   )
 }
 
