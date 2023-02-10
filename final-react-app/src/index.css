@@ -12,6 +12,11 @@ background: linear-gradient(to left, #237A57, #093028); /* W3C, IE 10+/ Edge, Fi
 
 }
 
+#nav {
+  background-color: #079c3b00;
+}
+
+
 .BtnImg {
   width: 9em;
   height: 3em;
@@ -43,3 +48,9 @@ background: linear-gradient(to left, #237A57, #093028); /* W3C, IE 10+/ Edge, Fi
  .BtnImg:hover::before {
   width: 9em;
  }
+
+ @media (max-width: 1279px) {
+  #nav {
+    background-color: #0D3A2F;
+  }
+  }

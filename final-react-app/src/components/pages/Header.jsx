@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 /* import {Link} from 'react-router-dom' */
 import {RiCloseLine, RiMenu3Fill, RiMenuLine } from "react-icons/ri";
+/* import logo from '../src/assets/logo.png' */
  
 
 const Header = () => {
@@ -11,7 +12,7 @@ const Header = () => {
    
   return (
   /*  Caracteristicas Header */  
-    <header className="text-quaternary flex item-center justify-between xl:justify-start w-full py-13 px-5 xs:px-40 h-[10vh] z-50 ">
+    <header className="text-quaternary flex item-center justify-between xl:justify-start w-full py-13 px-5 xs:px-40 h-[10vh] z-50">
          
    <div className=' text-center mt-3'>
     <p>Logo</p>
@@ -22,7 +23,7 @@ const Header = () => {
 
          {/*  Inicio de Caracteristicas NAV */}
 
-   <nav className={`fixed w-[80%] md:w-[20%] xl:w-full h-full  top-0 xl:static flex-2 flex flex-col ${showMenu ? "left-0" : "-left-full"} xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50`}>
+   <nav id="nav" className={`fixed w-[80%] md:w-[20%] xl:w-full h-full  top-0 xl:static flex-2 flex flex-col ${showMenu ? "left-0" : "-left-full"} xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50`}>
               
            <a href='#' className=''>Inicio</a>
            <a href='#' className=''>Productos</a>
