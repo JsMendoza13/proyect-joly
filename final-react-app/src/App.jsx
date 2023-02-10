@@ -1,6 +1,5 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Error404 from "./components/helpers/Error404"
-import './App.css'
 import Header from './components/pages/Header'
 import Main from './components/pages/Main'
 
@@ -18,7 +17,9 @@ function App() {
     <div>
       <Header />
       <RouterProvider router={router} />
+
     </div>
+    
   )
 }
 
