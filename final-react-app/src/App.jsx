@@ -5,7 +5,7 @@ import Footer from '/src/components/pages/Footer'
 import Header from '/src/components/pages/Header'
 import Main from '/src/components/pages/Main'
 import Productos_m from './components/productos/Productos_m'
-import Clientes_m from './components/productos/Clientes_m';
+import Clientes_m from './components/clientes/Clientes_m';
 import Editar from './components/productos/Editar';
 
 
