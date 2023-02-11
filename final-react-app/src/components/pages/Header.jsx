@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 /* import {Link} from 'react-router-dom' */
 import {RiCloseLine, RiMenu3Fill, RiMenuLine } from "react-icons/ri";
-/* import logo from '../src/assets/logo.png'  */
+import logo from '/src/assets/logo.png'
  
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
          
    <div className='text-center mt-3'>
            {/* <Link to='/'>  */}
-        <img className=' w-[0%] xl:w-[15%] ml-3 -mr-[10%]'  src="../src/assets/logo.png" />
+        <img src={logo} className='w-[0%] xl:w-[15%] ml-3 -mr-[10%]' />
               {/* </Link>  */}
                   </div>
 
