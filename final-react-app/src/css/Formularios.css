@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+/* >   >   >  >  formulario   <    <    < */
+
+.formulario {
+    padding: 20px;
+    border: 1px solid rgb(102, 102, 102);
+    width: 95%;
+    max-width: 400px;
+    background-color: #A6C157;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.formulario:hover {
+    box-shadow: 0px 0px 3px black;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ↓ inputs ↓ */
+
+
+input {
+    margin: 1px 0px;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 5px!important;
+}
+
+
+
+/* ↑ inputs ↑ */
+
+
+/* ↓ boton ↓ */
+.boton {
+    background-color: rgba(13, 148, 13, 0.999)!important;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+.boton:hover {
+    background-color: rgb(33, 171, 33);
+    border: solid 2px rgb(61, 121, 51);
+    color: rgba(255, 255, 255, 0.821);
+}
+/* ↑ boton ↑ */
+
+
+
+
+/* >   >   >  fin del formulario  <   <   <   <*/ /* ←     ←      ←         ←        ← */
+
+table {   /*tabla*/
+    border: 2px solid black;
+    background-color: #8fa843;
+}
+
+td, th {
+    text-align: center;
+    border-bottom: solid 1px rgb(140, 138, 138);
+    color: #EBEDEE;
+}
+
+th {
+    border-top: 1px solid rgb(87, 87, 87);
+    border-bottom: 1px solid rgb(87, 87, 87);
+    margin: 0px 10px;
+    width: 150px;
+    height: 27px;
+    padding: 5px 0px;
+}
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+td img {
+    width: 50px;
+    height: 50px;
+}
+
+td img:hover {
+    transform: rotate(5deg);
+}
+
+.editar {
+    background-color: #B3A943;
+    border-radius: 10px;
+}
+
+.editar:hover {
+    background-color: rgb(233, 233, 112);
+}
+
+.quitar {
+    background-color: rgb(203, 81, 81);
+    border-radius: 50%;
+
+}
+
+.quitar:hover {
+    background-color: rgb(198, 34, 34);
+}
+
+
+/* fin tabla          / /     /          /               / */
