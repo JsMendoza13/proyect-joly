@@ -1,27 +1,32 @@
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import Error404 from "./components/helpers/Error404"
-import Footer from './components/pages/Footer'
-import Header from './components/pages/Header'
-import Main from './components/pages/Main'
+/* import {createBrowserRouter, RouterProvider} from 'react-router-dom' */
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Error404 from "/src/components/helpers/Error404"
+import Footer from '/src/components/pages/Footer'
+import Header from '/src/components/pages/Header'
+import Main from '/src/components/pages/Main'
 
 
-const router = createBrowserRouter([
+/* const router = createBrowserRouter([
   {
     path: '/',
     element: <Main />,
     errorElement: <Error404 />
-  },
- ])
+  }
+ ]) */
 
 
 function App() {
   return (
-    <div>
-      <Header />
-      <RouterProvider router={router} />
+    <Router>
+       <Header />
+       
+       <Routes>
+       <Route path="/" element={<Main />}/>    
+       </Routes>
+        
+    {/*   <RouterProvider router={router} /> */}
       <Footer/>
-      </div>
-    
+            </Router> 
   )
 }
 
