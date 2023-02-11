@@ -2,7 +2,9 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Formularios from "../../css/Formularios.css"
 const urlProductos = "http://localhost:3100/productos";
+
 
 
 const Listado = () => {
@@ -25,6 +27,8 @@ const Listado = () => {
       }
 
   return (
+    <main>
+    
     <section className='tabla'>
             <table className='prueba'>
                 <thead>
@@ -57,6 +61,7 @@ const Listado = () => {
                     </tbody>
             </table>
         </section>
+        </main>
   )
 }
 

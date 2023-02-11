@@ -5,12 +5,10 @@
 }
 
 main {
-    display: flex;
-    justify-content: space-evenly;
     max-width: 100vw;
     padding-top: 30px;
     padding-bottom: 30px;
-    flex-wrap: wrap;
+    
 }
 
 /* >   >   >  >  formulario   <    <    < */
@@ -23,6 +21,7 @@ main {
     background-color: #A6C157;
     border-radius: 5px;
     height: 100%;
+    margin: auto auto;
 }
 
 .formulario:hover {
@@ -76,6 +75,7 @@ input {
 table {   /*tabla*/
     border: 2px solid black;
     background-color: #8fa843;
+    margin: auto auto;
 }
 
 td, th {
@@ -99,33 +99,6 @@ th {
     gap: 5px;
 }
 
-td img {
-    width: 50px;
-    height: 50px;
-}
-
-td img:hover {
-    transform: rotate(5deg);
-}
-
-.editar {
-    background-color: #B3A943;
-    border-radius: 10px;
-}
-
-.editar:hover {
-    background-color: rgb(233, 233, 112);
-}
-
-.quitar {
-    background-color: rgb(203, 81, 81);
-    border-radius: 50%;
-
-}
-
-.quitar:hover {
-    background-color: rgb(198, 34, 34);
-}
 
 
 /* fin tabla          / /     /          /               / */
