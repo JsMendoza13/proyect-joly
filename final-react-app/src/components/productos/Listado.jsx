@@ -19,14 +19,15 @@ const Listado = () => {
         console.log(res.data);
     };
 
-/*     const eliminarProducto = async (id) =>{await axios.delete(`${urlProductos}/${id}`)mostrarProductos()
-}; */
-
+    const eliminarProducto = async (id) => {
+        await axios.delete(`${urlProductos}/${id}`)
+        mostrarProductos()
+      }
 
   return (
     <section className='tabla'>
             <table className='prueba'>
-            <thead>
+                <thead>
                 <tr >
                     <th>Nombre</th>
                     <th>Descripcion</th>
@@ -37,13 +38,14 @@ const Listado = () => {
                 </tr>
                 </thead>
                 <tbody>
-                {productos.map((productos) => (    
+                {productos.map((productos) => (   
+                     
                     <tr>
                         <td>{productos.nombre}</td>
                         <td>{productos.descripcion}</td>
                         <td>{productos.valor}</td>
                         <td>{productos.cantidad}</td>
-                        <td>{productos.fechavencimiento}</td>
+                        <td>{productos.fechaVencimiento}</td>
                         <td>
                         <button onClick={()=> eliminarProducto(productos.id) } className="btn btn-danger form-control">Eliminar</button>
                 <Link to={`/editar/${productos.id}`} className="btn btn-warning form-control" >Editar</Link> 

@@ -5,6 +5,7 @@ import Footer from '/src/components/pages/Footer'
 import Header from '/src/components/pages/Header'
 import Main from '/src/components/pages/Main'
 import Productos_m from './components/productos/Productos_m'
+import Editar from './components/productos/Editar';
 
 
 /* const router = createBrowserRouter([
@@ -29,6 +30,7 @@ function App() {
        <Routes>
        <Route path="/" element={<Main />}/> 
        <Route path="/productos" element={<Productos_m/>}/>   
+       <Route path="/editar/:id" element={<Editar/>}/>  
        </Routes>
         
     {/*   <RouterProvider router={router} /> */}
