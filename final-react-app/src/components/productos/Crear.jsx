@@ -2,26 +2,27 @@ import React from 'react'
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-const urlProductos = "http://localhost:3100/productos";
+const urlProductos = 'http://localhost:3100/productos';
 
 const Crear = () => {
 
-  const [nombre, setNombre] = useState("");
+    const [nombre, setNombre] = useState("");
     const [descripcion, setDescripcion] = useState("");
     const [valor, setValor] = useState("");
     const [cantidad, setCantidad] = useState("");
     const [fechaVencimiento, setFechaVencimiento] = useState("");
+    const navigate = useNavigate();
 
     const crearProducto = async (e) => {
       e.preventDefault()
-      const producto = {
+      const productos = {
         nombre,
         descripcion,
         valor,
         cantidad,
         fechaVencimiento,
       };
-      await axios.post(urlProductos, producto);
+      await axios.post(urlProductos, productos);
       navigate('/productos')
     };
 
@@ -65,14 +66,12 @@ const Crear = () => {
             placeholder="FechaVencimiento"
             type="text"
             />
-
-            <input type="submit" value="Agregar" onClick={crearProducto} className='boton'/>
             <button onClick={crearProducto} className='boton'>Guardar</button>
         </form>
     </section>
     
    
-  )
-}
+  );
+};
 
 export default Crear

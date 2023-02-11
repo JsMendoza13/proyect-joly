@@ -27,7 +27,8 @@ function App() {
        <Header />
        
        <Routes>
-       <Route path="/" element={<Main />}/>    
+       <Route path="/" element={<Main />}/> 
+       <Route path="/productos" element={<Productos_m/>}/>   
        </Routes>
         
     {/*   <RouterProvider router={router} /> */}

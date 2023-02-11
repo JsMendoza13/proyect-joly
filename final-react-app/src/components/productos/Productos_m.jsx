@@ -1,5 +1,5 @@
 import React from 'react'
-import Formularios from '../../css/Formularios.css'
+import Formularios from '/src/css/Formularios.css'
 import Crear from './Crear'
 import Listado from './Listado'
 
