@@ -51,7 +51,8 @@ background: linear-gradient(to left, #237A57, #093028); /* W3C, IE 10+/ Edge, Fi
 
  @media (max-width: 1279px) {
   #nav {
-    background-color: #0D3A2F;
+    background-color: #B3A943;
+    color: #0D3A2F;
   }
 
   .BtnImg {

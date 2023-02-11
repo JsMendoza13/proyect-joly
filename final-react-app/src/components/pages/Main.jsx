@@ -12,7 +12,7 @@ const Main = () => {
             {/* Imagen Main */}
         <div>   
 
-            <img className='md:mt-20 mt-[20%] md:w-[45%] w-[100%] md:h-86 h-80  -rotate-3  ' src="../src/assets/img1.png" />
+            <img className='md:w-[50%] w-[80%] ' src="../src/assets/img1.png" />
 
    {/*  Cuadro abajo de imagenes */}
             <div className='relative bg-emerald-900 shadow-2xl rounded-tr-3xl rounded-br-lg xl:p-[5%] p-10 w-full md:w-[50%] flex flex-col justify-center  md:ml-[30%] ml-[50%] -translate-x-[60%] xl:-mt-[2%] -mt-[2%]  h-[100%] '></div>
@@ -28,14 +28,15 @@ const Main = () => {
          
            {/*  Parte de titulo y Descripcion */}
         <section className='md:col-span-3 flex items-center justify-center '>
-           <div >
-            <h1 className='font-bold text-quaternary m-1 text-center text-3xl'>Joly <span className='text-secundary text-2xl '> Guacamole y Hummus </span></h1>
+           <div className='p-10' >
+            <h1 className='font-bold text-quaternary mr-20 md:-mt-10 float-right text-7xl '>Joly </h1>
+            <h2 className='text-secundary text-4xl '> <br></br> Guacamole y Hummus </h2>
             <p className='text-gray-300 '>Mejore cualquier comida o refrigerio con este delicioso guacamole que complace a todos, perfectamente obtenido y preparado para obtener el máximo sabor. </p>
             </div>
         </section>
         </section>
        {/*  PARTE DE LA MISION - VISION */}
-        <section className='h-[100vh] grid grid-cols-1 md:grid-cols-8 '>
+        <section className='h-[100vh] grid grid-cols-1 md:grid-cols-8 mt-40'>
        
           <section className='md:col-span-4 flex items-center justify-center p-8'>
           <div>
