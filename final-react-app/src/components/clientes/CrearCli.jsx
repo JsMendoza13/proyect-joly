@@ -70,8 +70,8 @@ const CrearCli = () => {
             onChange={(e) => setCorreo(e.target.value)}
             value={correo}
             placeholder="Correo"
-            type="text"
-          />
+            type="email"
+            />
 
           <input
             onChange={(e) => setBarrio(e.target.value)}

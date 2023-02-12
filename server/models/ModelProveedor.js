@@ -3,7 +3,7 @@ import dataBase from "../config/conexionDatabase.js";
 
 const Proveedor = dataBase.define('proveedores', {
   nit: {
-    type: Sequelize.STRING
+    type: Sequelize.INTEGER
   },
   nombre: {
     type: Sequelize.STRING
@@ -15,16 +15,13 @@ const Proveedor = dataBase.define('proveedores', {
     type: Sequelize.INTEGER
   },
   correo: {
-    type: Sequelize.DATE
-  },
-  correo: {
-    type: Sequelize.DATE
+    type: Sequelize.STRING
   },
   direccion: {
-    type: Sequelize.INTEGER
+    type: Sequelize.STRING
   },
   logo: {
-    type: Sequelize.INTEGER
+    type: Sequelize.STRING
   }
 })
 
