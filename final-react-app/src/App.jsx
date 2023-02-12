@@ -7,6 +7,7 @@ import Productos_m from './components/productos/Productos_m'
 import Clientes_m from './components/clientes/Clientes_m';
 import Proveedores_m from './components/proveedores/Proveedores_m';
 import Editar from './components/productos/Editar';
+import Crear from './components/productos/Crear';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
        
        <Routes>
        <Route path="/" element={<Main />}/> 
-       <Route path="/productos" element={<Listado/>}/> 
+       <Route path="/productos" element={<Productos_m/>}/> 
        <Route path="/clientes" element={<Clientes_m/>}/>
        <Route path="/proveedores" element={<Proveedores_m/>}/>    
        <Route path="/editar/:id" element={<Editar/>}/> 

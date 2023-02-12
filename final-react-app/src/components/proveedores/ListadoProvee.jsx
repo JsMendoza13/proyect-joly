@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Formularios from "../../css/Formularios.css"
+import Formularios from "/src/css/Formularios.css"
 const urlProveedores = "http://localhost:3100/proveedores";
 
 
