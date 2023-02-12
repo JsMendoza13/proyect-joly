@@ -1,3 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,700;1,200;1,400&display=swap');
+       /* se exporta tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+      /* Diseño body */
+
+body{
+  font-family: 'JetBrains Mono', monospace;
+  background: #093028; 
+  background: -webkit-linear-gradient(to left, #237A57, #093028); 
+  background: linear-gradient(to left, #237A57, #093028); 
+
+}
+    /* Transparencia nav */
+
+#nav {
+  background-color: #079c3b00;
+}
+
+    /* Customs Boton contactame */
+.BtnImg {
+  width: 14em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 17px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #079c3b,
+              -6px -6px 12px #0ec40e;
+ }
+    
+ .BtnImg::before {
+  content: '';
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .BtnImg:hover::before {
+  width: 14em;
+ }
+
+/* Boton de cancelar crud */
+  .btnCancel {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #FF0072;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #FF0072;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+   }
+   
+   .btnCancel:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #FF0072;
+    z-index: -1;
+   }
+   
+   .btnCancel:hover, button:focus {
+    color: white;
+   }
+   
+   .btnCancel:hover:before, .btnCancel:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+   }
+   
+   .btnCancel:active {
+    transform: scale(0.9);
+   }
+
+
+        /* algunas caracteristicas responsive nav y boton */
+ @media (max-width: 1279px) {
+  #nav {
+    background-color: #B3A943;
+    color: #0D3A2F;
+  }
+
+  .BtnImg {
+    width: 100%;
+  }
+
+  .BtnImg:hover::before {
+    width: 100%;
+  }
+
+  }
