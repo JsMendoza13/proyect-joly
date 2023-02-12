@@ -32,8 +32,10 @@ const CrearProvee = () => {
 
   return (
     
-       <section className='formulario'>
-        <form>
+    <section className="-mb-[150%] md:mb-[0%]">
+        <h2 className='text-5xl text-center text-primary pt-5' >Registrar proveedores.</h2>
+       <section className='formulario my-5'>
+        <form className='py-2'>
 
             
             <input 
@@ -83,16 +85,22 @@ const CrearProvee = () => {
             value={logo}
             placeholder="logo"
             type="text"
-            />
+            /> 
+
+            <button onClick={crearProveedore} className='boton'> <span> Guardar 
+              
+            </span>
+            </button>
 
             <Link to={"/proveedores"} className="btnCancel">
             Cancelar
-          </Link>  
+          </Link> 
 
-            <button onClick={crearProveedore} className='boton'>Guardar</button>
+
         </form>
 
     </section>
+      </section>
     
    
   );

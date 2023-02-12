@@ -48,7 +48,8 @@ export const EditarProvee = () => {
   }, [])
 
   return (
-    <main>
+    <main className="-mb-[170%] md:mb-[0%]">
+       <h2 className='text-5xl text-center text-primary py-5' >Editar información de proveedores.</h2>
       <section className='formulario'>
     <form>
             
@@ -101,11 +102,13 @@ export const EditarProvee = () => {
             type="text"
             />
 
+           <Link onClick={actualizarProveedores} className='boton text-neutral-50 text-center'>Actualizar</Link>  
+
           <Link to={"/proveedores"} className="btnCancel">
             Cancelar
           </Link>  
 
-    <Link onClick={actualizarProveedores} className='boton'>Actualizar</Link>
+   
 </form>
 </section>
 </main>
