@@ -28,6 +28,14 @@ const Listado = () => {
 
   return (
     <main>
+
+<button className="boton_lista">
+  <span className="shadow"></span>
+  <span className="edge"></span>
+  <span className="front text"> Click me
+  </span>
+</button>
+
     
     <section className='tabla'>
             <table className='prueba'>
