@@ -17,9 +17,6 @@ const Cliente = dataBase.define('clientes', {
   correo: {
     type: Sequelize.DATE
   },
-  correo: {
-    type: Sequelize.DATE
-  },
   barrio: {
     type: Sequelize.INTEGER
   },
