@@ -30,15 +30,18 @@ const Listado = () => {
     <main>
 
     <section className="centrar">
+        
         <button className="boton_lista">
+        <Link to={'/crear'}>
         <span className="shadow"></span>
         <span className="edge"></span>
-        <span className="front text"> Nuevo producto
-        </span>
+        <span className="front text"> Nuevo producto </span>
+        </Link>
         </button>
+        
     </section>
 
-
+   
     
     <section className='tabla'>
             <table className='prueba'>
