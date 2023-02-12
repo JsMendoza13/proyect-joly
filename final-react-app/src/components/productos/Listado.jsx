@@ -27,16 +27,6 @@ const Listado = () => {
       }
 
   return (
-
-    <main>
-
-    <button className="boton_lista">
-      <span className="shadow"></span>
-      <span className="edge"></span>
-      <span className="front text"> Ir al formulario
-      </span>
-    </button>
-
     <main>
 
     <section className="centrar">

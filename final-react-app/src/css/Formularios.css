@@ -55,14 +55,13 @@ input {
 .boton {
     background-color: rgba(13, 148, 13, 0.999)!important;
     color: white;
-    border: 1px solid;
     border-radius: 5px;
     border: solid 1px black;
+    text-align: center;
 }
 
 .boton:hover {
     background-color: rgb(33, 171, 33);
-    border: solid 2px rgb(61, 121, 51);
     color: rgba(255, 255, 255, 0.821);
 }
 /* ↑ boton ↑ */

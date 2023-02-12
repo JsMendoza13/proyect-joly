@@ -28,6 +28,7 @@ const Crear = () => {
 
   return (
     
+        
        <section className='formulario'>
         <form>
 
@@ -67,6 +68,10 @@ const Crear = () => {
             type="text"
             />
             <Link onClick={crearProducto} className='boton'>Guardar</Link>
+
+            <Link to={"/productos"} className="btnCancel">
+            Cancelar
+            </Link>  
         </form>
     </section>
     
