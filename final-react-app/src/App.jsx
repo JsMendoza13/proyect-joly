@@ -15,9 +15,7 @@ import Crear from './components/productos/Crear';
 import Clientes from './components/clientes/ListadoCli';
 import Crear_cli from './components/clientes/CrearCli'
 
-/*↓ clientes ↓*/
-import Clientes from './components/clientes/ListadoCli';
-import Crear_cli from './components/clientes/CrearCli'
+
 
 
 function App() {
