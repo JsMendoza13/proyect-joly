@@ -7,6 +7,7 @@ import Main from '/src/components/pages/Main'
 import Listado from './components/productos/Listado';
 import Clientes_m from './components/clientes/Clientes_m';
 import Editar from './components/productos/Editar';
+import Crear from './components/clientes/CrearCli';
 
 
 /* const router = createBrowserRouter([
@@ -31,8 +32,10 @@ function App() {
        <Routes>
        <Route path="/" element={<Main />}/> 
        <Route path="/productos" element={<Listado/>}/> 
-       <Route path="/clientes" element={<Clientes_m/>}/>     
-       <Route path="/editar/:id" element={<Editar/>}/>  
+       <Route path="/clientes" element={<Clientes_m/>}/>    
+       <Route path="/editar/:id" element={<Editar/>}/> 
+       <Route path="/crear" element={<Crear/>}/>   
+       
        </Routes>
         
     {/*   <RouterProvider router={router} /> */}
