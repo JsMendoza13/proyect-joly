@@ -48,15 +48,17 @@ input {
   border: 2px solid rgb(8, 168, 56);
   border-radius: 5px;
   padding-left: 5px !important;
+  color:white!important;
 }
 
 input:focus {
-  color: rgb(187, 255, 0);
+  color: rgb(187, 255, 0)!important;
   background-color: #2b2a2a;
   outline-color: rgb(152, 253, 19);
   box-shadow: -3px -3px 15px rgb(132, 211, 5);
   transition: 0.1s;
   transition-property: box-shadow;
+  
 }
 
 /* ↑ inputs ↑ */
