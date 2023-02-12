@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Formularios from "/src/css/Formularios.css"
-const urlProveedores = "http://localhost:3100/proveedores";
+const urlproveedores = "http://localhost:3100/proveedores";
 
 
 
@@ -16,13 +16,13 @@ const ListadoProvee = () => {
     }, []);
 
     const mostrarProveedores = async () => {
-        const res = await axios.get(urlProveedores);
+        const res = await axios.get(urlproveedores);
         setProveedores(res.data);
         console.log(res.data);
     };
 
     const eliminarProveedores = async (id) => {
-        await axios.delete(`${urlProveedores}/${id}`)
+        await axios.delete(`${urlproveedores}/${id}`)
         mostrarProveedores()
       }
 
@@ -70,7 +70,7 @@ const ListadoProvee = () => {
 
                         <td>
                         <button onClick={()=> eliminarProveedores(proveedores.id) } className="btn btn-danger form-control">Eliminar</button>
-                <Link to={`/editar/${proveedores.id}`} className="btn btn-warning form-control" >Editar</Link> 
+                <Link to={`/editarProveedores/${proveedores.id}`} className="btn btn-warning form-control" >Editar</Link> 
 
                         
                         </td>

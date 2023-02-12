@@ -2,7 +2,7 @@ import React from 'react'
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-const urlProveedores = 'http://localhost:3100/proveedores';
+const urlproveedores = 'http://localhost:3100/proveedores';
 
 const CrearProvee = () => {
 
@@ -26,7 +26,7 @@ const CrearProvee = () => {
         direccion,
         logo,
       };
-      await axios.post(urlProveedores, proveedores);
+      await axios.post(urlproveedores, proveedores);
       navigate('/proveedores')
     };
 
