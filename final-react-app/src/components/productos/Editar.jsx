@@ -80,7 +80,7 @@ export const Editar = () => {
     placeholder="FechaVencimiento"
     type="text"
     />
-    <button onClick={actualizarProductos} className='boton'>Editar</button>
+    <Link onClick={actualizarProductos} className='boton'>Editar</Link>
 </form>
 </section>
 </main>
