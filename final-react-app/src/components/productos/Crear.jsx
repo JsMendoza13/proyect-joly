@@ -66,10 +66,7 @@ const Crear = () => {
             placeholder="FechaVencimiento"
             type="text"
             />
-            <button onClick={crearProducto} className='boton'>Guardar</button>
-            <Link to={"/productos"} className="btnCancel">
-            Cancelar
-          </Link>  
+            <Link onClick={crearProducto} className='boton'>Guardar</Link>
         </form>
     </section>
     
