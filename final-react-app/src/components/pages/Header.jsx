@@ -24,11 +24,13 @@ const Header = () => {
 
    <nav id="nav" className={`fixed w-[80%] md:w-[20%] xl:w-full h-full  top-0 xl:static flex-2 flex flex-col ${showMenu ? "left-0" : "-left-full"} xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50 `}>
               
-           <a href='#' className=''>Inicio</a>
+          <Link to={"/"} className="">Inicio</Link>  
          {/*  <Link to={"/main"} className='hoverLink text-primary'>Home</Link> */}
-           <a href='#' className=''>Productos</a>
-           <a href='#' className=''>Clientes</a>
-           <a href='#' className=''>Proveedores</a>   
+         <Link to={"/productos"} className="">Productos</Link>  
+         <Link to={"/Clientes"} className="">Clientes</Link>  
+         <Link to={"/Proveedores"} className="">Proveedores</Link>  
+          
+            
 
 
 

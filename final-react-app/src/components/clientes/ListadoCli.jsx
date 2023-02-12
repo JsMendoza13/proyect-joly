@@ -28,12 +28,17 @@ const ListadoCli = () => {
   return (
     <main>
 
-<button className="boton_lista">
-  <span className="shadow"></span>
-  <span className="edge"></span>
-  <span className="front text"> Ir al formulario
-  </span>
-</button>
+    <section className="centrar">
+        
+        <button className="boton_lista">
+        <Link to={'/crear_cli'}>
+        <span className="shadow"></span>
+        <span className="edge"></span>
+        <span className="front text"> Nuevo Cliente </span>
+        </Link>
+        </button>
+        
+    </section>
 
     
     <section className='tabla'>
@@ -69,7 +74,7 @@ const ListadoCli = () => {
 
                         <td>
                         <button onClick={()=> eliminarCliente(clientes.id) } className="btn btn-danger form-control">Eliminar</button>
-                <Link to={`/editarClientes/${clientes.id}`} className="btn btn-warning form-control" >Editar</Link> 
+                        <Link to={`/Editar_cli/${clientes.id}`} className="btn btn-warning form-control" >Editar</Link> 
 
                         
                         </td>

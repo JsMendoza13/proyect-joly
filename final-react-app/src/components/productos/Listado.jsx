@@ -2,7 +2,9 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Formularios from "../../css/Formularios.css"
 const urlProductos = "http://localhost:3100/productos";
+
 
 
 const Listado = () => {
@@ -25,16 +27,22 @@ const Listado = () => {
       }
 
   return (
-
     <main>
 
-    <button className="boton_lista">
-      <span className="shadow"></span>
-      <span className="edge"></span>
-      <span className="front text"> Ir al formulario
-      </span>
-    </button>
+    <section className="centrar">
+        
+        <button className="boton_lista">
+        <Link to={'/crear'}>
+        <span className="shadow"></span>
+        <span className="edge"></span>
+        <span className="front text"> Nuevo producto </span>
+        </Link>
+        </button>
+        
+    </section>
 
+   
+    
     <section className='tabla'>
             <table className='prueba'>
                 <thead>
