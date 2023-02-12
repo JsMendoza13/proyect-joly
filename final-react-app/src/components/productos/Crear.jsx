@@ -64,7 +64,7 @@ const Crear = () => {
             onChange={(e) => setFechaVencimiento(e.target.value)}
             value={fechaVencimiento}
             placeholder="FechaVencimiento"
-            type="text"
+            type="date"
           />
 
           <Link onClick={crearProducto} className="boton text-center">
