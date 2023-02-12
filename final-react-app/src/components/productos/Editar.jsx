@@ -1,10 +1,9 @@
-import React from 'react'
+import React from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 const urlProductos = "http://localhost:3100/productos";
-import Formularios from "../../css/Formularios.css"
 
 export const Editar = () => {
   const [nombre, setNombre] = useState("");
@@ -13,10 +12,10 @@ export const Editar = () => {
   const [cantidad, setCantidad] = useState("");
   const [fechaVencimiento, setFechaVencimiento] = useState("");
   const navigate = useNavigate();
-  const {id} = useParams()
+  const { id } = useParams();
 
   const actualizarProductos = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const productos = {
       nombre,
       descripcion,
@@ -25,71 +24,78 @@ export const Editar = () => {
       fechaVencimiento,
     };
     await axios.put(`${urlProductos}/${id}`, productos);
-    navigate('/productos')
+    navigate("/productos");
   };
 
   const listarProductos = async () => {
-    const res = await axios.get(`${urlProductos}/${id}`)
-    setNombre(res.data.nombre)
-    setDescripcion(res.data.descripcion)
-    setValor(res.data.valor)
-    setCantidad(res.data.cantidad)
-    setFechaVencimiento(res.data.fechaVencimiento)
-  }
+    const res = await axios.get(`${urlProductos}/${id}`);
+    setNombre(res.data.nombre);
+    setDescripcion(res.data.descripcion);
+    setValor(res.data.valor);
+    setCantidad(res.data.cantidad);
+    setFechaVencimiento(res.data.fechaVencimiento);
+  };
 
-  useEffect(()=> {
-    listarProductos()
-  }, [])
+  useEffect(() => {
+    listarProductos();
+  }, []);
 
   return (
-    <main>
-      <section className='formulario'>
-    <form>
-            
-    <input 
-      onChange={(e) => setNombre(e.target.value)}
-      value={nombre}
-      placeholder="Nombre"
-      type="text"
-    />
+    <main className="-mb-[170%] md:mb-[0%]">
+      <h2 className="text-5xl text-center text-primary py-5">
+        Editar información de productos.
+      </h2>
+      <section className="formulario">
+        <form>
+          <input
+            onChange={(e) => setNombre(e.target.value)}
+            value={nombre}
+            placeholder="Nombre"
+            type="text"
+          />
 
-    <input 
-       onChange={(e) => setDescripcion(e.target.value)}
-       value={descripcion}
-       placeholder="descripcion"
-       type="text"
-    />
+          <input
+            onChange={(e) => setDescripcion(e.target.value)}
+            value={descripcion}
+            placeholder="descripcion"
+            type="text"
+          />
 
-    <input 
-    onChange={(e) => setValor(e.target.value)}
-    value={valor}
-    placeholder="valor"
-    type="text"
-    />  
-    
-    <input 
-    onChange={(e) => setCantidad(e.target.value)}
-    value={cantidad}
-    placeholder="Cantidad"
-    type="text"
-    />
+          <input
+            onChange={(e) => setValor(e.target.value)}
+            value={valor}
+            placeholder="valor"
+            type="text"
+          />
 
-    <input 
-    onChange={(e) => setFechaVencimiento(e.target.value)}
-    value={fechaVencimiento}
-    placeholder="FechaVencimiento"
-    type="text"
-    />
-    <Link onClick={actualizarProductos} className='boton'>Editar</Link>
+          <input
+            onChange={(e) => setCantidad(e.target.value)}
+            value={cantidad}
+            placeholder="Cantidad"
+            type="text"
+          />
 
-     <Link to={"/productos"} className="btnCancel">
+          <input
+            onChange={(e) => setFechaVencimiento(e.target.value)}
+            value={fechaVencimiento}
+            placeholder="FechaVencimiento"
+            type="date"
+          />
+
+          <Link
+            onClick={actualizarProductos}
+            className="boton text-neutral-50 text-center"
+          >
+            Actualizar
+          </Link>
+
+          <Link to={"/productos"} className="btnCancel">
             Cancelar
-      </Link> 
-</form>
-</section>
-</main>
-  )
-}
+          </Link>
+        </form>
+      </section>
+    </main>
+  );
+};
 
-
-export default Editar
+export default Editar;
