@@ -38,7 +38,7 @@ function App() {
        
        <Route path="/clientes" element={<Clientes/>}/>   
        <Route path="/crear_cli" element={<Crear_cli/>}/>
-       <Route path="/editar_cli:id" element={<Editar_cli/>}/>
+       <Route path="/editar_cli/:id" element={<Editar_cli/>}/>
 
 
         <Route path='/editarProveedores/:id' element={<EditarProvee/>}/>  
