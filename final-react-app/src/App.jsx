@@ -1,4 +1,3 @@
-/* import {createBrowserRouter, RouterProvider} from 'react-router-dom' */
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Error404 from "/src/components/helpers/Error404"
 
@@ -16,19 +15,9 @@ import Crear from './components/productos/Crear';
 import Clientes from './components/clientes/ListadoCli';
 import Crear_cli from './components/clientes/CrearCli'
 
-
-/* const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Main />,
-    errorElement: <Error404 />
-  },
-  {
-    path: '/productos',
-    element: <Productos_m />,
-    errorElement: <Error404 />
-  }
- ]) */
+/*↓ clientes ↓*/
+import Clientes from './components/clientes/ListadoCli';
+import Crear_cli from './components/clientes/CrearCli'
 
 
 function App() {
@@ -48,8 +37,7 @@ function App() {
        <Route path="/crear_cli" element={<Crear_cli/>}/>   
        
        </Routes>
-        
-    {/*   <RouterProvider router={router} /> */}
+
       <Footer/>
             </Router> 
   )
