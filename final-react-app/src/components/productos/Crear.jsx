@@ -67,6 +67,9 @@ const Crear = () => {
             type="text"
             />
             <button onClick={crearProducto} className='boton'>Guardar</button>
+            <Link to={"/productos"} className="btnCancel">
+            Cancelar
+          </Link>  
         </form>
     </section>
     
