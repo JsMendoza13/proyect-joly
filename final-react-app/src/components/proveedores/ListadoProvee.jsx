@@ -2,7 +2,6 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Formularios from "/src/css/Formularios.css"
 const urlproveedores = "http://localhost:3100/proveedores";
 
 
@@ -70,6 +69,8 @@ const ListadoProvee = () => {
 
                         <td>
                         <button onClick={()=> eliminarProveedores(proveedores.id) } className="btn btn-danger form-control">Eliminar</button>
+
+                        
                 <Link to={`/editarProveedores/${proveedores.id}`} className="btn btn-warning form-control" >Editar</Link> 
 
                         
