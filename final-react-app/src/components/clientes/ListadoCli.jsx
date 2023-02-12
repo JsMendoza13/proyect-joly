@@ -75,7 +75,7 @@ const Listado = () => {
 
                         <td>
                         <button onClick={()=> eliminarClientes(clientes.id) } className="btn btn-danger form-control">Eliminar</button>
-                <Link to={`/editar/${Clientes.id}`} className="btn btn-warning form-control" >Editar</Link> 
+                <Link to={`/editar/${clientes.id}`} className="btn btn-warning form-control" >Editar</Link> 
 
                         
                         </td>
