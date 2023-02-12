@@ -78,7 +78,7 @@ export const Editar = () => {
     onChange={(e) => setFechaVencimiento(e.target.value)}
     value={fechaVencimiento}
     placeholder="FechaVencimiento"
-    type="text"
+    type="date"
     />
     <Link onClick={actualizarProductos} className='boton'>Editar</Link>
 

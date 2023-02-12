@@ -87,7 +87,7 @@ export const Editar = () => {
     onChange={(e) => setCorreo(e.target.value)}
     value={correo}
     placeholder="Correo"
-    type="text"
+    type="email"
     />
 
     
