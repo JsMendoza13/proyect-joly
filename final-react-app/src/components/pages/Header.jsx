@@ -27,8 +27,9 @@ const Header = () => {
           <Link to={"/"} className="">Inicio</Link>  
          {/*  <Link to={"/main"} className='hoverLink text-primary'>Home</Link> */}
          <Link to={"/productos"} className="">Productos</Link>  
-           <a href='#' className=''>Clientes</a>
-           <a href='#' className=''>Proveedores</a>  
+         <Link to={"/Clientes"} className="">Clientes</Link>  
+         <Link to={"/Proveedores"} className="">Proveedores</Link>  
+          
             
 
 

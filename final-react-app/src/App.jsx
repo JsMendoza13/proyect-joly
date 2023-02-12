@@ -14,8 +14,12 @@ import Crear from './components/productos/Crear';
 /*↓ clientes ↓*/
 import Clientes from './components/clientes/ListadoCli';
 import Crear_cli from './components/clientes/CrearCli'
+import Editar_cli from './components/clientes/EditarCli'
 
+/* proveedores*/
 import EditarProvee from './components/proveedores/EditarProvee';
+import Proveedores from './components/proveedores/ListadoProvee';
+import CrearProveedores from './components/proveedores/CrearProvee';
 
 
 
@@ -33,9 +37,13 @@ function App() {
        <Route path="/editar/:id" element={<Editar/>}/> 
        
        <Route path="/clientes" element={<Clientes/>}/>   
-       <Route path="/crear_cli" element={<Crear_cli/>}/>  
+       <Route path="/crear_cli" element={<Crear_cli/>}/>
+       <Route path="/editar_cli:id" element={<Editar_cli/>}/>
 
-        <Route path='/editarProveedores/:id' element={<EditarProvee/>}/>   
+
+        <Route path='/editarProveedores/:id' element={<EditarProvee/>}/>  
+        <Route path='/crear_proveedores' element={<CrearProveedores/>}/>  
+        <Route path='/proveedores' element={<Proveedores/>}/>  
        
        </Routes>
 

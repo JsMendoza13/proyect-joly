@@ -29,12 +29,17 @@ const ListadoProvee = () => {
   return (
     <main>
 
-<button className="boton_lista">
-  <span className="shadow"></span>
-  <span className="edge"></span>
-  <span className="front text"> Ir al formulario
-  </span>
-</button>
+<section className="centrar">
+        
+        <button className="boton_lista">
+        <Link to={'/crear_proveedores'}>
+        <span className="shadow"></span>
+        <span className="edge"></span>
+        <span className="front text"> Nuevo proveedor </span>
+        </Link>
+        </button>
+        
+    </section>
 
     
     <section className='tabla'>
