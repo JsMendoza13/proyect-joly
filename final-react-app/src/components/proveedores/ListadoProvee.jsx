@@ -70,7 +70,7 @@ const ListadoProvee = () => {
 
                         <td>
                         <button onClick={()=> eliminarProveedores(proveedores.id) } className="btn btn-danger form-control">Eliminar</button>
-                <Link to={`/editar/${Proveedores.id}`} className="btn btn-warning form-control" >Editar</Link> 
+                <Link to={`/editar/${proveedores.id}`} className="btn btn-warning form-control" >Editar</Link> 
 
                         
                         </td>

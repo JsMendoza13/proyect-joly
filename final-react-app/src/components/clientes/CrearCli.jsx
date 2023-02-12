@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 const urlClientes = 'http://localhost:3100/clientes';
 
-const Crear = () => {
+const CrearCli = () => {
 
     const [documento, setDocumento] = useState("");
     const [nombre, setNombre] = useState("");
@@ -107,4 +107,4 @@ const Crear = () => {
   );
 };
 
-export default Crear
+export default CrearCli

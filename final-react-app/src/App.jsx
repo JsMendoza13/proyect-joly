@@ -8,6 +8,7 @@ import Clientes_m from './components/clientes/Clientes_m';
 import Proveedores_m from './components/proveedores/Proveedores_m';
 import Editar from './components/productos/Editar';
 import Crear from './components/productos/Crear';
+import EditarCli from './components/clientes/EditarCli';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
        <Route path="/proveedores" element={<Proveedores_m/>}/>    
        <Route path="/editar/:id" element={<Editar/>}/> 
        <Route path="/crear" element={<Crear/>}/>   
+       <Route path="/editarClientes/:id" element={<EditarCli/>}/>
        
        </Routes>
 
