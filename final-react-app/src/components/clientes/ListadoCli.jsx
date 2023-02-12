@@ -29,12 +29,17 @@ const Listado = () => {
   return (
     <main>
 
-<button className="boton_lista">
-  <span className="shadow"></span>
-  <span className="edge"></span>
-  <span className="front text"> Ir al formulario
-  </span>
-</button>
+    <section className="centrar">
+        
+        <button className="boton_lista">
+        <Link to={'/crear_cli'}>
+        <span className="shadow"></span>
+        <span className="edge"></span>
+        <span className="front text"> Nuevo Cliente </span>
+        </Link>
+        </button>
+        
+    </section>
 
     
     <section className='tabla'>

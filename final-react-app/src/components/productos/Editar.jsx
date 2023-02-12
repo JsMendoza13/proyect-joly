@@ -81,6 +81,10 @@ export const Editar = () => {
     type="text"
     />
     <Link onClick={actualizarProductos} className='boton'>Editar</Link>
+
+     <Link to={"/productos"} className="btnCancel">
+            Cancelar
+      </Link> 
 </form>
 </section>
 </main>

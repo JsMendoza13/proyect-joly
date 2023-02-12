@@ -94,11 +94,10 @@ const Crear = () => {
             type="text"
             />
 
+            <button onClick={crearCliente} className='boton'>Guardar</button>
             <Link to={"/clientes"} className="btnCancel">
             Cancelar
-          </Link>  
-
-            <button onClick={crearCliente} className='boton'>Guardar</button>
+            </Link>  
         </form>
 
     </section>
