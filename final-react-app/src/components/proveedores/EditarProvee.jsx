@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
-const urlproveedores = "http://localhost:3100/clientes";
+const urlproveedores = "http://localhost:3100/proveedores";
 import Formularios from "../../css/Formularios.css"
 
 export const EditarProvee = () => {

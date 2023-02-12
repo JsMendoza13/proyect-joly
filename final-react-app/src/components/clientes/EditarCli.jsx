@@ -35,7 +35,7 @@ export const Editar = () => {
   };
 
   const listarClientes = async () => {
-    const res = await axios.get(`${urlClientes}/${id}`)
+    const res = await axios.get(`${urlclientes}/${id}`)
     setDocumento(res.data.documento)
     setNombre(res.data.nombre)
     setApellido(res.data.apellido)
