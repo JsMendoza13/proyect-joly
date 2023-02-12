@@ -7,7 +7,7 @@ import Main from '/src/components/pages/Main'
 import Listado from './components/productos/Listado';
 import Clientes_m from './components/clientes/Clientes_m';
 import Editar from './components/productos/Editar';
-import Crear from './components/clientes/CrearCli';
+import Crear from './components/productos/Crear';
 
 
 /* const router = createBrowserRouter([
