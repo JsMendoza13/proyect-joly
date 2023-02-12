@@ -15,6 +15,8 @@ import Crear from './components/productos/Crear';
 import Clientes from './components/clientes/ListadoCli';
 import Crear_cli from './components/clientes/CrearCli'
 
+import EditarProvee from './components/proveedores/EditarProvee';
+
 
 
 
