@@ -2,12 +2,11 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Formularios from "../../css/Formularios.css"
 const urlClientes = "http://localhost:3100/clientes";
 
 
 
-const Listado = () => {
+const ListadoCli = () => {
     const [clientes, setClientes] = useState([]);
 
     useEffect (() => {
@@ -21,7 +20,7 @@ const Listado = () => {
         console.log(res.data);
     };
 
-    const eliminarClientes = async (id) => {
+    const eliminarCliente = async (id) => {
         await axios.delete(`${urlClientes}/${id}`)
         mostrarClientes()
       }
@@ -69,8 +68,8 @@ const Listado = () => {
 
 
                         <td>
-                        <button onClick={()=> eliminarClientes(clientes.id) } className="btn btn-danger form-control">Eliminar</button>
-                <Link to={`/editar/${Clientes.id}`} className="btn btn-warning form-control" >Editar</Link> 
+                        <button onClick={()=> eliminarCliente(clientes.id) } className="btn btn-danger form-control">Eliminar</button>
+                <Link to={`/editarClientes/${clientes.id}`} className="btn btn-warning form-control" >Editar</Link> 
 
                         
                         </td>
@@ -83,4 +82,4 @@ const Listado = () => {
   )
 }
 
-export default Listado
+export default ListadoCli
