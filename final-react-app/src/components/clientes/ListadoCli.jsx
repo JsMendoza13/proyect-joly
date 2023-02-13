@@ -24,7 +24,7 @@ const ListadoCli = () => {
   };
 
   return (
-    <main className="-mb-[180%] md:mb-[0%]">
+    <main className="-mb-[190%] md:mb-[0%]">
       <h2 className="text-5xl text-primary text-center">
         Clientes registrados.
       </h2>
@@ -57,13 +57,13 @@ const ListadoCli = () => {
           <tbody>
             {clientes.map((clientes) => (
               <tr>
-                <td>{clientes.documento}</td>
-                <td>{clientes.nombre}</td>
-                <td>{clientes.apellido}</td>
-                <td>{clientes.telefono}</td>
-                <td>{clientes.correo}</td>
-                <td>{clientes.barrio}</td>
-                <td>{clientes.direccion}</td>
+                <td data-label="Documento:">{clientes.documento}</td>
+                <td data-label="Nombre:">{clientes.nombre}</td>
+                <td data-label="Apellido:">{clientes.apellido}</td>
+                <td data-label="Telefono:">{clientes.telefono}</td>
+                <td data-label="Correo:">{clientes.correo}</td>
+                <td data-label="Barrio:">{clientes.barrio}</td>
+                <td data-label="Dirreccion:">{clientes.direccion}</td>
                 <td>
                   <img src={`${clientes.foto}`} alt="Foto" />
                 </td>
@@ -80,7 +80,7 @@ const ListadoCli = () => {
                     to={`/Editar_cli/${clientes.id}`}
                     className=" text-lime-500 text-3xl justify-center
                                     float-right
-                                    -ml-10 mr-5 mt-2
+                                    -ml-4 mr-2 mt-2
                                     hover:text-green-400"
                   >
                     <HiPencilSquare />

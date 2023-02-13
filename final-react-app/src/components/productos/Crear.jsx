@@ -26,7 +26,7 @@ const Crear = () => {
   };
 
   return (
-    <section className="-mb-[150%] md:mb-[0%]">
+    <section className="-mb-[180%] md:mb-[0%]">
       <h2 className="text-5xl text-center text-primary pt-5">
         Registra productos de tu elección.{" "}
       </h2>
