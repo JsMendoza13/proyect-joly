@@ -48,34 +48,21 @@ input {
   border: 2px solid rgb(8, 168, 56);
   border-radius: 5px;
   padding-left: 5px !important;
-  color:white!important;
+  color: white !important;
 }
 
 input:focus {
-  color: rgb(187, 255, 0)!important;
+  color: rgb(187, 255, 0) !important;
   background-color: #2b2a2a;
   outline-color: rgb(152, 253, 19);
   box-shadow: -3px -3px 15px rgb(132, 211, 5);
   transition: 0.1s;
   transition-property: box-shadow;
-  
 }
 
 /* ↑ inputs ↑ */
 
 /* ↓ boton ↓ */
-/* .boton {
-    background-color: rgba(13, 148, 13, 0.999)!important;
-    color: white;
-    border-radius: 5px;
-    border: solid 1px black;
-    text-align: center;
-}
-
-.boton:hover {
-    background-color: rgb(33, 171, 33);
-    color: rgba(255, 255, 255, 0.821);
-} */
 
 .boton {
   outline: none;
@@ -230,36 +217,84 @@ button:focus:not(:focus-visible) {
 
 /* >   >   >  fin del formulario  <   <   <   <*/ /* ←     ←      ←         ←        ← */
 
+.tabla {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
 table {
-  /*tabla*/
-  border: 2px solid black;
-  background-color: #8fa84341;
-  margin: auto auto;
-  margin-bottom: 150px;
-  position: relative;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.462);
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
 }
 
-td,
-th {
+table tr {
+  background-color: #05471120;
+  border: 1px solid #03c370;
+  color: rgb(175, 232, 5);
+}
+
+table th,
+td {
+  font-size: 16px;
+  padding: 8px;
   text-align: center;
-  border-bottom: solid 1px;
-  color: azure;
 }
 
-th {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  margin: 0px 10px;
-  width: 150px;
-  height: 27px;
-  padding: 5px 0px;
-  color: #99fa4a;
+table thead th {
+  text-transform: uppercase;
+  background-color: #053f2c;
+  color: #66ff66;
 }
 
-.acciones {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
+table tbody tr:hover {
+  background-color: #0b87415c;
+}
+
+table tbody td:hover {
+  background-color: #07863131;
+}
+
+@media screen and (max-width: 800px) {
+  table {
+    border: 0px;
+  }
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    margin-bottom: 8px;
+    border-bottom: 4px solid #057c38;
+    display: block;
+  }
+
+  table th,
+  td {
+    font-size: 12px;
+  }
+
+  table td {
+    background-color: #053f2c;
+    display: block;
+    border-bottom: 1px solid #06a416;
+    text-align: center;
+  }
+  table td:last-child {
+    border-bottom: 0px;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    color: #dedede;
+  }
 }
 
 /* fin tabla          / /     /          /               / */

@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     /*  Caracteristicas Header */
-    <header className="text-quaternary flex item-center justify-between xl:justify-start w-full py-13 px-5 xs:px-40 h-[10vh] z-50 ">
+    <header className="NavBg text-quaternary flex item-center justify-between xl:justify-start w-full py-13 px-5 xs:px-40 h-[10vh] z-50">
       <div className="text-center mt-3">
         <Link to="/">
           <img src={logo} className="w-[0%] xl:w-[15%] ml-3 -mr-[10%]" />

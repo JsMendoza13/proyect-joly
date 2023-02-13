@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 xl:p-10 p-8 relative m-auto md:mt-[0%] xl:mt-[0%] mt-[180%] ">
+    <footer className="bg-neutral-900 xl:p-10 p-8 relative m-auto md:mt-[0%] xl:mt-[0%] mt-[220%] ">
       {/* Imagen logo footer */}
       <div className="flex item-center justify-between border-b pb-20 border-secundary ">
         <img

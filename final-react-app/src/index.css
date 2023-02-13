@@ -6,11 +6,15 @@
 
       /* Diseño body */
 
-body{
-  font-family: 'JetBrains Mono', monospace;
+html{
   background: #093028; 
   background: -webkit-linear-gradient(to left, #237A57, #093028); 
   background: linear-gradient(to left, #237A57, #093028); 
+}
+
+body{
+  font-family: 'JetBrains Mono', monospace;
+
 
 }
     /* Transparencia nav */
@@ -18,6 +22,8 @@ body{
 #nav {
   background-color: #079c3b00;
 }
+
+
 
     /* Customs Boton contactame */
 .BtnImg {

@@ -32,7 +32,7 @@ const CrearCli = () => {
   };
 
   return (
-    <section className="-mb-[150%] md:mb-[0%]">
+    <section className="-mb-[170%] md:mb-[0%]">
       <h2 className="text-5xl text-center text-primary pt-5">
         Registro de clientes.
       </h2>
@@ -71,7 +71,7 @@ const CrearCli = () => {
             value={correo}
             placeholder="Correo"
             type="email"
-            />
+          />
 
           <input
             onChange={(e) => setBarrio(e.target.value)}

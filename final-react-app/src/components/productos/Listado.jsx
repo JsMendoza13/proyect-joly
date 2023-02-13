@@ -24,7 +24,7 @@ const Listado = () => {
   };
 
   return (
-    <main className="-mb-[180%] md:mb-[0%]">
+    <main className="-mb-[190%] md:mb-[0%]">
       <h2 className="text-5xl text-primary text-center">
         Productos registrados.
       </h2>
@@ -53,11 +53,13 @@ const Listado = () => {
           <tbody>
             {productos.map((productos) => (
               <tr>
-                <td>{productos.nombre}</td>
-                <td>{productos.descripcion}</td>
-                <td>{productos.valor}</td>
-                <td>{productos.cantidad}</td>
-                <td>{productos.fechaVencimiento}</td>
+                <td data-label="Nombre:">{productos.nombre}</td>
+                <td data-label="Descripcion:">{productos.descripcion}</td>
+                <td data-label="Valor:">{productos.valor}</td>
+                <td data-label="Cantidad:">{productos.cantidad}</td>
+                <td data-label="Fecha Vencimiento:">
+                  {productos.fechaVencimiento}
+                </td>
 
                 <td>
                   <button

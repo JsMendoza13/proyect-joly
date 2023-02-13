@@ -41,7 +41,7 @@ export const Editar = () => {
   }, []);
 
   return (
-    <main className="-mb-[170%] md:mb-[0%]">
+    <main className="-mb-[180%] md:mb-[0%]">
       <h2 className="text-5xl text-center text-primary py-5">
         Editar información de productos.
       </h2>

@@ -24,7 +24,7 @@ const ListadoProvee = () => {
   };
 
   return (
-    <main className="-mb-[180%] md:mb-[0%]">
+    <main className="-mb-[190%] md:mb-[0%]">
       <h2 className="text-5xl text-primary text-center">
         Proveedores registrados.
       </h2>
@@ -38,7 +38,7 @@ const ListadoProvee = () => {
         </button>
       </section>
 
-      <section className="tabla">
+      <section className="tabla ">
         <table className="prueba">
           <thead>
             <tr className="text-xl">
@@ -55,15 +55,17 @@ const ListadoProvee = () => {
           <tbody>
             {proveedores.map((proveedores) => (
               <tr>
-                <td>{proveedores.nit}</td>
-                <td>{proveedores.nombre}</td>
-                <td>{proveedores.nombreRepresentante}</td>
-                <td>{proveedores.telefono}</td>
-                <td>{proveedores.correo}</td>
-                <td>{proveedores.direccion}</td>
+                <td data-label="Nit:">{proveedores.nit}</td>
+                <td data-label="Nombre">{proveedores.nombre}</td>
+                <td data-label="Nombre Representante:">
+                  {proveedores.nombreRepresentante}
+                </td>
+                <td data-label="Telefono:">{proveedores.telefono}</td>
+                <td data-label="Correo:">{proveedores.correo}</td>
+                <td data-label="Direccion:">{proveedores.direccion}</td>
 
-                <td>
-                  <img src={`${proveedores.logo}`} alt="Logo" />
+                <td data-label="Logo:">
+                  <img src={`${proveedores.logo}`} />
                 </td>
 
                 <td>
@@ -78,7 +80,7 @@ const ListadoProvee = () => {
                     to={`/editarProveedores/${proveedores.id}`}
                     className=" text-lime-500 text-3xl justify-center
                                     float-right
-                                    -ml-10 mr-5 mt-2
+                                    -ml-5 mr-2 mt-2
                                     hover:text-green-400"
                   >
                     <HiPencilSquare />
