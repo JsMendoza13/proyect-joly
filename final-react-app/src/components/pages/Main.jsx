@@ -63,7 +63,7 @@ const Main = () => {
         <section className="md:col-span-4 flex items-center justify-center p-8">
           <div>
             <h1 className="font-bold m-1 ml-5 text-6xl text-secundary">
-              Mision
+              Mision02
             </h1>
             <img
               className="md:mt-10 mt-[7%] md:w-[45%] w-[70%] md:h-86 h-55 "
