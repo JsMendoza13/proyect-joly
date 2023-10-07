@@ -40,9 +40,9 @@ function Slider() {
   };
   /* Comienzo del div, que en cierra las imagenes y los textos */
   return (
-    <div className="max-w-[1200px] h-[780px] w-full m-auto py-36 px-4 relative group ">
+    <div className="max-w-[1200px] h-[780px] w-full m-auto py-36 xl:mt-2 -mt-20 px-4 relative group ">
       <div>
-        <h2 className="font-bold text-4xl py-4 text-secundary ">
+        <h2 className="font-bold xl:text-4xl text-3xl py-4 text-secundary ">
           ¡Simplemente déjate llevar por los deliciosos productos de
           <span className="text-tertiary"> Joly, Guacamole y Hummus</span>! Sin
           conservantes ni ingredientes artificiales.

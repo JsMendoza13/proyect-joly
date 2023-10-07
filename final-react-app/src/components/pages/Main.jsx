@@ -10,10 +10,9 @@ const Main = () => {
       <section className="h-[90vh] grid grid-cols-1 md:grid-cols-8 ">
         {/*  Informacion del Main, y divisiones */}
 
-
-         {/*  Parte de titulo y Descripcion */}
-         <section className="md:col-span-4 flex items-center justify-center ">
-          <div className="p-10 -mb-50 ">
+        {/*  Parte de titulo y Descripcion */}
+        <section className="md:col-span-4 flex items-center justify-center ">
+          <div className="xl:p-10 p-5 -mb-50 xl:-mt-[10%] md:-mt-[80%] md:ml-[10%] ">
             <h1 className="font-bold text-quaternary mr-20 md:-mt-10 float-right text-7xl ">
               Joly{" "}
             </h1>
@@ -21,18 +20,20 @@ const Main = () => {
               {" "}
               <br></br> Guacamole y Hummus{" "}
             </h2>
-            <p className="text-gray-300 ">
+            <p className="text-gray-300 mt-2">
               Mejore cualquier comida o refrigerio con este delicioso guacamole
               que complace a todos, perfectamente obtenido y preparado para
               obtener el máximo sabor.{" "}
-            </p>           
+            </p>
           </div>
-          <div className="mt-[320%] md:mt-80 md:-ml-40 absolute ">
+          <div className="mt-[320%] xl:mt-60 md:mt-20 xl:ml-20 md:ml-60 absolute ">
             <a
               target="_blank"
               href="https://github.com/JsMendoza13/proyect-joly"
             >
-              <button className="BtnImg text-quaternary px-10">Contáctanos</button>
+              <button className="BtnImg text-quaternary px-10">
+                Contáctanos
+              </button>
             </a>
           </div>
         </section>
@@ -41,21 +42,20 @@ const Main = () => {
           <div className="flex items-center justify-center relative"> </div>
           {/* Imagen Main */}
           <div>
-            <img className=" object-cover xl:-mt-28 -mt-10 -ml-[6%]  rotate-6 " src={img1} />
+            <img
+              className=" object-cover xl:-mt-28 -mt-10 -ml-[6%]  rotate-6 "
+              src={img1}
+            />
 
             {/*  Cuadro abajo de la imagen */}
-          {/*   <div className="relative bg-emerald-900 shadow-2xl rounded-tr-3xl rounded-br-lg xl:p-[5%] p-10 w-full md:w-[50%] flex flex-col justify-center  md:ml-[30%] ml-[50%] -translate-x-[60%] xl:-mt-[2%] -mt-[2%]  h-[100%] "></div> */}
+            {/*   <div className="relative bg-emerald-900 shadow-2xl rounded-tr-3xl rounded-br-lg xl:p-[5%] p-10 w-full md:w-[50%] flex flex-col justify-center  md:ml-[30%] ml-[50%] -translate-x-[60%] xl:-mt-[2%] -mt-[2%]  h-[100%] "></div> */}
           </div>
           {/*  boton contactame */}
-        
         </section>
-
-       
       </section>
       {/* Se llama al Slider */}
       <section className="mt-60 md:mt-0">
-        {" "}
-        <Slider />{" "}
+        <Slider />
       </section>
 
       {/*  PARTE DE LA MISION - VISION */}
@@ -70,7 +70,7 @@ const Main = () => {
               src={mision}
             />
 
-            <p className="relative bg-emerald-900 shadow-2xl rounded-tr-3xl rounded-br-lg md:p-3 p-5 w-full md:w-[50%] flex flex-col md:ml-[30%] ml-[0%] md:-translate-x-[-40%] md:-mt-[23%] mt-[5%]  h-[100%] text-quaternary">
+            <p className="relative bg-emerald-900 shadow-2xl rounded-tr-3xl rounded-br-lg md:p-3 p-5 w-full  md:w-[100%] flex flex-col md:ml-[2%] ml-[0%] md:-translate-x-[-5%] md:mt-[3%] mt-[5%]  h-[100%] text-quaternary">
               Guacamole y Hummus es un proyecto innovador que ofrece deliciosos
               platillos con la misión de llevar el sabor de nuestra region a
               cualquier cocina. Ademas es una empresa que se esfuerza por crear

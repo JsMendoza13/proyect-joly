@@ -30,13 +30,13 @@ const Header = () => {
           <span>Inicio</span>
         </Link>
         <Link to={"/productos"} id="style-2" data-replace="Productos">
-          Productos
+          <span> Productos</span>
         </Link>
         <Link to={"/Clientes"} id="style-2" data-replace="Clientes">
-          Clientes
+          <span>Clientes</span>
         </Link>
         <Link to={"/Proveedores"} id="style-2" data-replace="Proveedores">
-          Proveedores
+          <span>Proveedores </span>
         </Link>
       </nav>
 
